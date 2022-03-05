@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="PngView" Height="450" Width="800">
     <Grid>
-        
+        <DataGrid x:Name="InfosDG" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="531" Height="350">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Width="60" Binding="{Binding ID}"/>
+                <DataGridTextColumn Header="Name chank" Width="150" Binding="{Binding NameChank}"/>
+                <DataGridTextColumn Header="Length" Width="120" Binding="{Binding Length}"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

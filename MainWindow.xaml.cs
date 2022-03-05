@@ -40,7 +40,7 @@ namespace PngReader
             }
             else if (path.EndsWith(".png"))
             {
-                new PngView().Show();
+                new PngView(path).Show();
             }
         }
 

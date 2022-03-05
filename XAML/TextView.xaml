@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="TextView" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="InfosDG" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="400" Height="350">
+        <DataGrid x:Name="InfosDG" IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Top" Width="531" Height="350">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Width="40" Binding="{Binding ID}"/>
-                <DataGridTextColumn Header="Data" Width="150" Binding="{Binding Data}"/>
-                <DataGridTextColumn Header="Word count" Width="100" Binding="{Binding CountWord}"/>
+                <DataGridTextColumn Header="ID" Width="60" Binding="{Binding ID}"/>
+                <DataGridTextColumn Header="Data" Width="350" Binding="{Binding Data}"/>
+                <DataGridTextColumn Header="Word count" Width="120" Binding="{Binding CountWord}"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="RefreshButton" Content="Refresh" HorizontalAlignment="Left" Margin="603,10,0,0" VerticalAlignment="Top" Height="40" Width="123" Click="RefreshButton_Click"/>
+        <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="603,75,0,0" VerticalAlignment="Top" Height="40" Width="123" Click="ClearButton_Click"/>
     </Grid>
 </Window>

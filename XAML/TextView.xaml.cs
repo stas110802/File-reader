@@ -47,7 +47,7 @@ namespace PngReader.XAML
 
         private void RefreshButton_Click(object sender, RoutedEventArgs e)
         {
-            InfosDG.Items.Clear();
+            Clear();
             FillTable();
         }
 
@@ -69,6 +69,16 @@ namespace PngReader.XAML
             }
 
             return count;
+        }
+
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            Clear();
+        }
+
+        private void Clear()
+        {
+            InfosDG.Items.Clear();
         }
     }
 }
