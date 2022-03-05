@@ -1,0 +1,17 @@
+﻿<Window x:Class="PngReader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PngReader"
+        mc:Ignorable="d"
+        Title="Reader" Height="400" Width="400">
+
+
+    <Grid>
+        <TextBox x:Name="PathTB" HorizontalAlignment="Left" Margin="10,19,0,0" TextWrapping="Wrap" FontSize="15" VerticalAlignment="Top" Width="296" Height="37"/>
+        <Button x:Name="ReadButton" Content="Read" HorizontalAlignment="Left" Margin="200,85,0,0" VerticalAlignment="Top" Height="38" Width="106" Click="ReadButton_Click"/>
+        <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="320,19,0,0" VerticalAlignment="Top" Height="37" Width="52" Click="ClearButton_Click"/>
+    </Grid>
+</Window>
+  
